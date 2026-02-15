@@ -9,9 +9,9 @@
 
 :root {
     --cor0: #ebe5c5;
-    --cor1: #83A603;
-    --cor2: #F2C53D;
-    --cor3: #F2A413;
+    --cor1: #fdd17f;
+    --cor2: #ffb01c;
+    --cor3: #dd9510;
     --cor4: #D97C0B;
     --cor5: #b86a0b;
     
@@ -47,6 +47,10 @@ header > p {
     padding-bottom: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.291);
     font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav {
@@ -57,20 +61,20 @@ nav {
 a {
     text-decoration: none;
     color: white;
-    font-weight: bolder;
+    font-family: var(--fonte-padrão);
 }
 nav > a {
     margin-left: 10px;
     transition-duration: .3s;
-    color: var(--cor3);
+    color: var(--cor1);
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 nav > a:hover {
     color: var(--cor5);
     background-color: var(--cor3);
     padding: 5px;
-    border-radius: 5px;
-    font-family: var(--fonte-padrão);
 }
 
 main {
@@ -93,17 +97,30 @@ main h1 {
 
 main h2 {
     font-family: var(--fonte-subtítulo);
+    color: var(--cor2);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    margin: 10px 0px;
+    padding: 5px;
+    
 }
 
-main p {
+ main p {  /* se colocarmos o ">" não vai pegar nos "p" de article, aside e etc. */
     margin: 15px 0px;
     text-indent: 30px;
     line-height: 1.2em;
     font-size: 1.1em;
 }
 
-main img { 
+main img {
     width: 100%;
+}
+
+
+article > img {
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    
 }
 
 article > footer {
@@ -114,6 +131,14 @@ aside {
     background-color: var(--cor3);
     margin-top: 10px;
     padding: 10px;
+}
+
+aside > h3 {
+    background-color: var(--cor5);
+    margin: -10px ;
+    margin-bottom: 10px;
+    padding: 5px;
+
 }
 
 footer {
