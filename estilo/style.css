@@ -131,6 +131,7 @@ aside {
     background-color: var(--cor3);
     margin-top: 10px;
     padding: 10px;
+    border-top-left-radius: 10px;
 }
 
 aside > h3 {
@@ -138,7 +139,7 @@ aside > h3 {
     margin: -10px ;
     margin-bottom: 10px;
     padding: 5px;
-
+    border-top-left-radius: 10px;
 }
 
 footer {
